@@ -1,0 +1,532 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    /*font-family: '微軟正黑體';*/
+}
+@font-face {
+    font-family: 'Nagurigaki Crayon';
+    src: url("c:\USERS\88690\APPDATA\LOCAL\MICROSOFT\WINDOWS\FONTS\CHALK (1).TTF");
+  }
+
+  ::-webkit-scrollbar {
+    width: 0;
+  }
+.drop{
+    color: white;
+}
+
+.ve{
+    display: flex;
+    justify-content: center;
+    background-color: #404E51;
+    margin-bottom: 100px;
+}
+
+.run{
+    margin-top: -50px;
+}
+
+.list{
+    visibility: hidden;
+    margin-right: 100px;
+    margin-top: 250px;
+    padding:0; /*清單左側會多約40px要消除*/
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    
+    
+}
+
+.list_title{
+   position: absolute;
+}
+
+.list img{
+    height: 40px;
+    width: 40px;
+}
+
+.list:focus .item{
+    display: block;
+}
+
+
+.item{
+    text-decoration: none;
+    margin-bottom: 2px;
+    border-bottom: none;
+    display: none;
+    position: relative;
+    bottom:100%;
+    margin-bottom: 20px;
+}
+
+.item a:hover{
+    background-color: #708a90;
+}
+
+.list:hover .item{
+    display: block;
+}
+
+.list:hover .list_title{
+    visibility: hidden;
+}
+
+.nnews{
+    padding-top: 100px;
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+    
+}
+
+.iinfo{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+    
+}
+
+.ppro{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+    
+}
+
+.ccom{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+    
+}
+
+
+nav{
+    background:rgb(255, 255, 255);
+    height: 70px;
+    width: auto;
+    /*position:fixed;*/
+    z-index: index 100;
+    color: white;
+    font-family: 'Nagurigaki Crayon';
+    letter-spacing: 4px;
+    
+}
+
+.angry{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.navone{
+    display: flex;
+    align-items:center;
+}
+
+.sqlogo img{
+    width: 60px;
+    height: 60px;
+    /*margin-left: 10px;*/
+    margin-top: 10px;
+}
+
+.says{
+    margin-top: 5px;
+    margin-left: 13px;
+}
+
+.news{
+    background-color: #404e51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.news:hover{
+    background-color: #404e519a;
+}
+
+.info{
+    background-color: #404E51;
+    padding:5px 9px;
+    color:white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.info:hover{
+    background-color: #404e519a;
+}
+
+.produ{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.produ:hover{
+    background-color: #404e519a;
+}
+
+
+.common{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.common:hover{
+    background-color: #404e519a;
+}
+
+
+.line img{
+    width: 35px;
+    height: 35px;
+    
+}
+
+.fb img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ig img{
+    width: 35px;
+    height: 35px;
+}
+
+.run img{
+    height: 338px;
+    width: 1519px;
+    margin-top: 70px;
+}
+
+.bigname{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    height: 100px;
+    font-family: none;
+    font-family: 'Nagurigaki Crayon';
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+    color: #404E51;
+    font-weight: bolder;
+}
+
+.one{
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #fbfce2;
+    height: 450px;
+    z-index: index 1;
+    
+}
+
+.textone{
+    margin-right: 100px;
+    /*display: flex;
+    flex-direction:column;
+    align-items:center;*/
+}
+
+.textonebig{
+    width: 500px;
+    text-align: center;
+    letter-spacing:7px;
+    font-weight: bold;
+    color: #404E51;
+    margin-bottom: 10px;
+    font-family: 'Nagurigaki Crayon';
+}
+
+.textonesmall{
+    background-color: #708a90;
+    width: 500px;
+    height: 265px;
+    font-size: 16px;
+    color: white;
+    text-align:center;
+    padding-top: 20px;
+    border-radius: 10px;
+    line-height:30px;
+    letter-spacing:5px;
+}
+
+.onephoto img{
+    width: 480px;
+    height: 360px;
+    border-radius: 10px;
+    border-right: #404E51 5px solid;
+    border-bottom: #404E51 5px solid;
+
+}
+
+.two{
+    margin-top: 100px;
+    margin-right: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.texttwo{
+    margin-left: 100px;
+}
+
+.texttwobig{
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    color: #404E51;
+    letter-spacing:7px;
+    margin-bottom: 10px;
+    font-family: 'Nagurigaki Crayon';
+}
+
+.texttwosmall{
+    background-color: #708a90;
+    width: 500px;
+    height: 265px;
+    font-size: 16px;
+    color: white;
+    text-align:center;
+    padding-top: 20px;
+    border-radius: 10px;
+    line-height:30px;
+    letter-spacing:5px;
+}
+
+.twophoto img{
+    width: 480px;
+    height: 360px;
+    border-radius: 10px;
+    border-left: #404E51 5px solid;
+    border-bottom: #404E51 5px solid;
+
+}
+
+.three{
+    margin-top: 100px;
+    padding-top: 100px;
+    padding-left: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    justify-content: center;
+    background-color: #fbfce2;
+    height: 450px;
+}
+
+.textthree{
+    margin-right: 100px;
+}
+
+.textthreebig{
+    width: 500px;
+    text-align: center;
+    font-weight: bold;
+    color: #404E51;
+    letter-spacing:7px;
+    margin-bottom: 10px;
+    font-family: 'Nagurigaki Crayon';
+}
+
+.textthreesmall{
+    background-color: #708a90;
+    width: 500px;
+    height: 265px;
+    font-size: 16px;
+    color: white;
+    text-align:center;
+    padding-top: 20px;
+    border-radius: 10px;
+    letter-spacing:5px;
+    line-height:30px;
+}
+
+.threephoto img{
+    width: 480px;
+    height: 360px;
+    border-radius: 10px;
+    border-right: #404E51 5px solid;
+    border-bottom: #404E51 5px solid;
+
+}
+
+
+
+.back_to_top{
+    width: auto;
+    position:fixed;
+    right: 10px; bottom: 10px;
+    background-color: none;
+    text-align: center;
+   
+}
+
+.top_btn:hover{
+    background-color: #708a9043;
+    border-radius: 50%;
+}
+
+.top_btn{
+    border: none;
+    background-color: #fbfce200;
+    
+}
+
+.top_btn img{
+    width:60px;
+    height:60px;
+    border: none;
+    background-color: #fbfce200;
+}
+
+.top_text{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fbfce200;
+    font-family: 'Nagurigaki Crayon';
+    letter-spacing: 2px;
+}
+
+.foot{
+    display: flex;
+    align-items: center;/*將內容上下至中*/
+    justify-content: center;
+    text-align: center;
+
+    background-color: #404E51;
+    height: 200px;
+    
+    font-size: 14px;
+    color: white;
+}
+
+@media (max-width:992px){/*螢幕寬度最大為991 平板套用*/
+    
+
+
+}
+
+@media (max-width:768px){/*螢幕寬最大為767 手機套用*/
+
+    .list{
+        visibility: visible;
+    }
+
+    .bigname{
+        font-size: 30px;
+    }
+
+    .says{
+        display: none;
+    }
+
+    .run img{
+        height: 200px;
+        width: auto;
+        margin-bottom: 200px;
+    }
+
+    .content{
+        display: inline-block;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .one{
+        display: inline;
+        /*justify-self: center;
+        align-items: center;*/
+        background-color: none;
+        height: 500px;
+        padding-left: 0;
+    }
+
+    .textone{
+        margin-right:0;
+        
+    }
+
+    .textonesmall{
+        width: 480px;
+    }
+
+    .onephoto img{
+        margin-top: 50px;
+        width: 480px;
+    }
+
+    .two{
+        display: inline;
+        margin-right: 0px;
+    }
+
+    .twophoto{
+        margin-top: 250px;
+    }
+
+    .texttwo{
+        margin-left: 0;
+        margin-top: 0px;
+        margin-top: 50px;
+    }
+
+    .texttwosmall{
+        width: 480px;
+        margin-bottom: 200px;
+    }
+
+    .three{
+        display: inline;
+        background-color: none;
+    }
+
+    .textthree{
+        margin-right: 0;
+    }
+
+    .textthreesmall{
+        width: 480px;
+        margin-bottom: 50px;
+    }
+
+    .threephoto{
+        margin-bottom: 200px;
+    }
+
+
+    .ve{
+        scale: 60%;
+    }
+    
+}

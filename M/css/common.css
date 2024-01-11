@@ -1,0 +1,280 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+@font-face {
+    font-family: 'Nagurigaki Crayon';
+    src: url("c:\USERS\88690\APPDATA\LOCAL\MICROSOFT\WINDOWS\FONTS\CHALK (1).TTF");
+  }
+
+/*.listlist{
+    visibility: hidden;
+}*/
+
+.drop{
+    color: white;
+}
+
+.list{
+    visibility: hidden;
+    margin-right: 100px;
+    margin-top: 250px;
+    padding:0; /*清單左側會多約40px要消除*/
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    
+    
+}
+
+.list_title{
+   position: absolute;
+}
+
+.list img{
+    height: 40px;
+    width: 40px;
+}
+
+.list:focus .item{
+    display: block;
+}
+
+
+.item{
+    text-decoration: none;
+    margin-bottom: 2px;
+    border-bottom: none;
+    display: none;
+    position: relative;
+    bottom:100%;
+    margin-bottom: 20px;
+}
+
+.item a:hover{
+    background-color: #708a90;
+}
+
+.list:hover .item{
+    display: block;
+}
+
+.list:hover .list_title{
+    visibility: hidden;
+}
+
+.nnews{
+    padding-top: 100px;
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+.iinfo{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+.ppro{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+.ccom{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+nav{
+    background:rgb(255, 255, 255);
+    height: 70px;
+    width: auto;
+    /*position:fixed;*/
+    z-index: index 100;
+    color: white;
+    font-family: 'Nagurigaki Crayon';
+    letter-spacing: 4px;
+}
+
+.angry{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.navone{
+    display: flex;
+    align-items:center;
+}
+
+.sqlogo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.says{
+    margin-top: 5px;
+    margin-left: 13px;
+}
+
+.news{
+    background-color: #404e51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.news:hover{
+    background-color: #404e519a;
+}
+
+.info{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.info:hover{
+    background-color: #404e519a;
+}
+
+
+.produ{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.produ:hover{
+    background-color: #404e519a;
+}
+
+
+
+
+.common{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 838px;
+    border-radius: 5px;
+}
+
+.common:hover{
+    background-color: #404e519a;
+}
+
+
+
+
+.line img{
+    width: 35px;
+    height: 35px;
+    
+}
+
+.fb img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ig img{
+    width: 35px;
+    height: 35px;
+}
+
+.qone{
+    background-color:#85a3a99a;
+    padding: 10px 20px;
+}
+
+.qone_q{
+    font-size: 16px;
+    color: white;
+    background-color: #404E51;
+    padding: 10px;
+    width: 400px;
+}
+
+.qone_a{
+    font-size: 16px;
+    color: white;
+    background-color: #404E51;
+    padding: 10px;
+    width: 400px;
+}
+
+.foot{
+    display: flex;
+    align-items: center;/*將內容上下至中*/
+    justify-content: center;
+    text-align: center;
+
+    background-color: #404E51;
+    height: 200px;
+    
+    font-size: 14px;
+    color: white;
+    margin-top: 300px;
+}
+
+@media (max-width:992px){/*螢幕寬度最大為991 平板套用*/
+    
+
+
+}
+
+@media (max-width:768px){/*螢幕寬最大為767 手機套用*/
+
+    .list{
+        visibility: visible;
+    }
+
+    .bigname{
+        font-size: 30px;
+    }
+
+    .says{
+        display: none;
+    }
+
+    .run img{
+        height: 200px;
+        width: auto;
+        margin-bottom: 200px;
+    }
+
+}
+

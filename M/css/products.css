@@ -1,0 +1,788 @@
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+ 
+}
+
+.page img{
+    width: 100%;
+    height: auto;
+}
+
+@font-face {
+    font-family: 'Nagurigaki Crayon';
+    src: url("c:\USERS\88690\APPDATA\LOCAL\MICROSOFT\WINDOWS\FONTS\CHALK (1).TTF");
+  }
+
+/*.listlist{
+    visibility: hidden;
+}*/
+
+.drop{
+    color: white;
+}
+
+.list{
+    visibility: hidden;
+    margin-right: 100px;
+    margin-top: 250px;
+    padding:0; /*清單左側會多約40px要消除*/
+    display: inline;
+    list-style: none;
+    text-decoration: none;
+    color: white;
+    position: absolute;
+    
+    
+}
+
+.list_title{
+   position: absolute;
+}
+
+.list img{
+    height: 40px;
+    width: 40px;
+}
+
+.list:focus .item{
+    display: block;
+}
+
+
+.item{
+    text-decoration: none;
+    margin-bottom: 2px;
+    border-bottom: none;
+    display: none;
+    position: relative;
+    bottom:100%;
+    margin-bottom: 20px;
+}
+
+.item a:hover{
+    background-color: #708a90;
+}
+
+.list:hover .item{
+    display: block;
+}
+
+.list:hover .list_title{
+    visibility: hidden;
+}
+
+.nnews{
+    padding-top: 100px;
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+.iinfo{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+.ppro{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+.ccom{
+    color: white;
+    background-color: #404E51;
+    padding:5px 9px;
+    border-radius: 5px;
+}
+
+nav{
+    background:rgb(255, 255, 255);
+    height: 70px;
+    width: auto;
+    /*position:fixed;*/
+    z-index: index 100;
+    color: white;
+    font-family: 'Nagurigaki Crayon';
+    letter-spacing: 4px;
+
+}
+
+.angry{
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content:space-between;
+    align-items:center;
+
+}
+
+nav a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+}
+
+.navone{
+    display: flex;
+    align-items:center;
+}
+
+.sqlogo img{
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.says{
+    margin-top: 5px;
+    margin-left: 13px;
+}
+
+.news{
+    background-color: #404e51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.news:hover{
+    background-color: #404e519a;
+}
+
+.info{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.info:hover{
+    background-color: #404e519a;
+}
+
+
+.produ{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.produ:hover{
+    background-color: #404e519a;
+}
+
+
+
+
+.common{
+    background-color: #404E51;
+    padding:5px 9px;
+    color: white;
+    margin-right: 838px;
+    border-radius: 5px;
+}
+
+.common:hover{
+    background-color: #404e519a;
+}
+
+
+
+
+.line img{
+    width: 35px;
+    height: 35px;
+    
+}
+
+.fb img{
+    width: 35px;
+    height: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.ig img{
+    width: 35px;
+    height: 35px;
+}
+
+.test a:hover,
+section#one:hover ~  .test a[href="#one"],
+section#two:hover ~  .test a[href="#two"],
+section#three:hover ~  .test a[href="#three"],
+section#four:hover ~  .test a[href="#four"] {
+  color: #404E51;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+
+/*.test{
+    z-index: 100;
+    position:fixed;
+    top: 30px;
+    right:-15px
+}*/
+
+.testa_one{
+    margin-top:5px;
+    width: 60px;
+    height: 160px;
+    text-align: center;
+    font-weight: bold;
+    padding-top:10px;
+    border-radius: 5px;
+    background-color: #708a906e;
+
+    z-index: 100;
+    position:fixed;
+    top: 30px;
+    right:-15px
+}
+
+.testa_two{
+    font-weight: bold;
+    margin-top:5px;
+    width: 60px;
+    height: 55px;
+    text-align: center;
+    padding-top:10px;
+    border-radius: 5px;
+    background-color: #708a906e;
+
+    z-index: 100;
+    position:fixed;
+    top: 200px;
+    right:-15px
+}
+
+.testa_three{
+    font-weight: bold;
+    margin-top:5px;
+    width: 60px;
+    height: 55px;
+    text-align: center;
+    padding-top:10px;
+    border-radius: 5px;
+    background-color: #708a906e;
+    
+
+    z-index: 100;
+    position:fixed;
+    top: 265px;
+    right:-15px
+}
+
+.testa_four{
+    font-weight: bold;
+    margin-top:5px;
+    width: 60px;
+    height: 55px;
+    text-align: center;
+    padding-top:10px;
+    border-radius: 5px;
+    background-color: #708a906e;
+
+    z-index: 100;
+    position:fixed;
+    top: 330px;
+    right:-15px
+}
+
+.testa_one a{
+    color: white;
+    text-decoration: none;
+}
+
+.testa_two a{
+    color: white;
+    text-decoration: none;
+}
+
+.testa_three a{
+    color: white;
+    text-decoration: none;
+}
+
+.test .testa_one:hover{
+    right: 10px;
+}
+
+.testa_four a{
+    color: white;
+    text-decoration: none;
+}
+
+.testone :hover{
+    right: 10px;
+}
+
+.testtwo :hover{
+    right: 10px;
+}
+
+.testthree :hover{
+    right: 10px;
+}
+
+.testfour :hover{
+    right: 10px;
+}
+
+
+.allcake{
+    margin-top: 100px;
+    height: 80vh;
+    background-color: #fbfce2;
+    padding-top: 30px;
+    padding-bottom: 160px;
+}
+
+.cakepro{
+    
+    padding: 50px 50px;
+}
+
+.cake {
+    background-color: #404e519a;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 12px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.cakecake{
+    display: flex;
+    justify-content: start;
+    position: absolute;
+}
+
+
+.mangocakephoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.mangocakephoto img:hover {
+    scale: 150%;
+}
+
+.mangocaketext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.cancakephoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.cancakephoto img:hover {
+    scale: 150%;
+}
+
+.cancaketext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.teacakephoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.teacakephoto img:hover {
+    scale: 150%;
+}
+
+.teacaketext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.stracakephoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.stracakephoto img:hover {
+    scale: 150%;
+}
+
+.stracaketext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.fruitcakephoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.fruitcakephoto img:hover {
+    scale: 150%;
+}
+
+.fruitcaketext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+
+.momcakephoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.momcakephoto img:hover {
+    scale: 150%;
+}
+
+.momcaketext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+
+
+.alltart{
+    
+    height: 80vh;
+    padding-top: 30px;
+    padding-bottom: 160px;
+    
+}
+
+.tartpro{
+    padding: 50px 50px;
+}
+
+.tart {
+    background-color: #404e519a;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 12px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.tarttart{
+    display: flex;
+    justify-content: start;
+    position: absolute;
+}
+
+.bluetartphoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.bluetartphoto img:hover {
+    scale: 150%;
+}
+
+.bluetarttext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.ortartphoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.ortartphoto img:hover {
+    scale: 150%;
+}
+
+.ortarttext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+
+.smtartphoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.smtartphoto img:hover {
+    scale: 150%;
+}
+
+.smtarttext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.mtartphoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.mtartphoto img:hover {
+    scale: 150%;
+}
+
+.mtarttext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+.boxtartphoto img{
+    width: 200px;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: 90px;
+    border-radius: 15px;
+}
+
+.boxtartphoto img:hover {
+    scale: 150%;
+}
+
+.boxtarttext{
+    margin-top: 10px;
+    font-size:16px;
+    width: 250px;
+    text-align:center;
+    margin-left: 70px;
+    line-height:25px;
+}
+
+
+.allpao{
+    background-color: #fbfce2;
+    height: 80vh;
+    padding-top: 30px;
+    padding-bottom: 160px;
+    
+}
+
+.paopro{
+    padding: 50px 50px;
+}
+
+.pao {
+    background-color: #404e519a;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 12px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+.allth{
+    
+    height: 80vh;
+    padding-top: 30px;
+    padding-bottom: 160px;
+    
+}
+
+.thpro{
+    padding: 50px 50px;
+}
+
+.th {
+    background-color: #404e519a;
+    color: white;
+    width: 150px;
+    height: 40px;
+    font-size: 16px;
+    font-weight: bold;
+    text-align:center;
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 12px;
+    border-radius: 5px;
+    letter-spacing: 3px;
+}
+
+
+
+.back_to_top{
+    width: auto;
+    position:fixed;
+    right: 10px; bottom: 10px;
+    background-color: none;
+    text-align: center;
+   
+}
+
+.top_btn:hover{
+    background-color: #708a9043;
+    border-radius: 50%;
+}
+
+.top_btn{
+    border: none;
+    background-color: #fbfce200;
+    
+}
+
+.top_btn img{
+    width:60px;
+    height:60px;
+    border: none;
+    background-color: #fbfce200;
+}
+
+.top_text{
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #fbfce200;
+    font-family: 'Nagurigaki Crayon';
+    letter-spacing: 2px;
+}
+
+
+
+
+
+
+.foot{
+    display: flex;
+    align-items: center;/*將內容上下至中*/
+    justify-content: center;
+    text-align: center;
+
+    background-color: #404E51;
+    height: 200px;
+    
+    font-size: 14px;
+    color: white;
+    margin-top: 300px;
+}
+
+@media (max-width:992px){/*螢幕寬度最大為991 平板套用*/
+    
+
+
+}
+
+@media (max-width:768px){/*螢幕寬最大為767 手機套用*/
+
+    .list{
+        visibility: visible;
+    }
+
+    .bigname{
+        font-size: 30px;
+    }
+
+    .says{
+        display: none;
+    }
+
+    .run img{
+        height: 200px;
+        width: auto;
+        margin-bottom: 200px;
+    }
+
+}
+
